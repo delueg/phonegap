@@ -1,33 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<widget xmlns	 = "http://www.w3.org/ns/widgets" 
-xmlns:gap	= "http://phonegap.com/ns/1.0" 
-version = "1.0.1"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.phonegap.hello-world"
+        version   = "2.0.0">
+    <name>Prototyp</name>
 
-<name>TOPModel ProtoTyp</name> 
+    <description>
+       Topmodel Prototyp.
+    </description>
 
-<description> 
-Prototyp
-</description> 
+    <author href="http://schalk-and-friends.de" email="info@schalk-and-friends.de">
+        PhoneGap Team
+    </author>
 
-<author href="http://www.schalk-and-friends.de" 
-email="info@schalk-and-friends.de"> 
-schalk&friends
-</author> 
+    <feature name="http://api.phonegap.com/1.0/device" />
 
-<gap:platforms> 
-<gap:platform name="android" minVersion="2.2" /> 
-<gap:platform name="ios" /> 
-</gap:platforms> 
+    <preference name="phonegap-version" value="2.1.0" />
+    <preference name="orientation"      value="default" />
+    <preference name="target-device"    value="universal" />
+    <preference name="fullscreen"       value="false" />
 
-<icon src="icon.png" gap:role="default" /> 
+    <icon src="images/icon.png" />
+    <gap:splash src="images/front.png"/> 
+    <preference name="autorotate" value="false" readonly="true"/> 
+	<preference name="phonegap-version" value="2.2.0" />
+	<preference name="orientation" value="portrait" />
+	<preference name="fullscreen" value="true" />
+	<preference name="webviewbounce" value="true" />
+	<preference name="ios-statusbarstyle" value="black-opaque" />
 
-<gap:splash src="images/front.png"/> 
-
-<!-- sample preference specification --> 
-<preference name="autorotate" value="false" readonly="true"/> 
-<preference name="phonegap-version" value="2.2.0" />
-<preference name="orientation" value="portrait" />
-<preference name="fullscreen" value="true" />
-<preference name="webviewbounce" value="true" />
-<preference name="ios-statusbarstyle" value="black-opaque" />
 </widget>
